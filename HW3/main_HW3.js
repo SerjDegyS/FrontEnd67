@@ -29,7 +29,7 @@ var memories = [
     }];
 
 var color;
-var img = null;
+var img = "default.png";
 var memory = 0;
 var phonePrice = 0;
 
@@ -49,7 +49,7 @@ colors: while(true){
     }
 }
 
-memories: while(img !== null){
+memories: while(img !== "default.png"){
     memory = prompt('Memory ?')
     if(memory === null){
         memory = 0;
