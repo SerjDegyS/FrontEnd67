@@ -56,9 +56,18 @@ function calculator(){
 
     var number1 = enterNumber("first");
     var number2 = enterNumber("second");
-    var sign = enterNumber("sign");
+    var sign = prompt("Enter the sign...");
 
-   return (number1 + sign + number2);
+    document.write(number1 + ' ' + sign + ' ' + number2 + ' = ')
+
+    switch(sign){
+        case '+': return number1 + number2;
+        case '-': return number1 - number2;
+        case '*': return number1 * number2;
+        case '/': return number1 / number2;
+    }
+
+//    return ((number1 + '+' + number2));
 
 }
 
