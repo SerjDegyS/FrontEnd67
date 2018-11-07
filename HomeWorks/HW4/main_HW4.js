@@ -41,7 +41,6 @@ function calculator(){
             return !isNaN(parseFloat(value)) && isFinite(value);
         }
         
-        
         do{
            var number = prompt("Enter " + discr + " number...");
 
@@ -50,13 +49,24 @@ function calculator(){
                 break;
             }
         }while(!isNomeric(number));
-        console.log(typeof number);
+        // console.log(typeof number);
         return +number;
     }
 
+    
+
     var number1 = enterNumber("first");
     var number2 = enterNumber("second");
-    var sign = prompt("Enter the sign...");
+    var sign = function getSign(){
+        do{
+            var sign = prompt("Enter the sign...");
+            if(sign === null){
+                alert("Goodbye!");
+                return;
+            }
+        }while(!/[+-/*]/.test(sign));
+        return sign.match(/[+-/*]/)[0];
+    }();
 
     document.write(number1 + ' ' + sign + ' ' + number2 + ' = ')
 
@@ -66,8 +76,6 @@ function calculator(){
         case '*': return number1 * number2;
         case '/': return number1 / number2;
     }
-
-//    return ((number1 + '+' + number2));
 
 }
 
