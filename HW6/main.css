@@ -1,0 +1,13 @@
+#box{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: coral;
+}
