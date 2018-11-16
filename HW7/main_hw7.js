@@ -10,50 +10,17 @@ function Hamburger(size, stuffing) {
     this._size = size;
     this._stuffing = stuffing;
     this._toppings = [];
+    this._throws = "Отменя!";
  } 
 
 /* Размеры, виды начинок и добавок */
-Hamburger.SIZE_SMALL = {
-    name: 'sizeSmall',
-    price: 50,
-    cal: 20
-}
-
-Hamburger.SIZE_LARGE = {
-    mame: 'sizeLarge',
-    price: 100,
-    cal: 40
-}
-
-Hamburger.STUFFING_CHEESE = {
-    name: 'stuffing_cheese',
-    price: 10,
-    cal: 20
-}
-
-Hamburger.STUFFING_SALAD = {
-    name: 'stuffing_salad',
-    price: 20,
-    cal: 5
-}
-
-Hamburger.STUFFING_POTATO = {
-    name: 'stuffing_potato',
-    price: 15,
-    cal: 10
-}
-
-Hamburger.TOPPING_MAYO = {
-    name: 'topping_mayo',
-    price: 20,
-    cal: 5
-}
-
-Hamburger.TOPPING_SPICE = {
-    name: 'topping_spice',
-    price: 15,
-    cal: 0
-}
+Hamburger.SIZE_SMALL = {name: 'sizeSmall', price: 50, cal: 20};
+Hamburger.SIZE_LARGE = {mame: 'sizeLarge', price: 100, cal: 40};
+Hamburger.STUFFING_CHEESE = {name: 'stuffing_cheese', price: 10, cal: 20};
+Hamburger.STUFFING_SALAD = {name: 'stuffing_salad', price: 20, cal: 5};
+Hamburger.STUFFING_POTATO = {name: 'stuffing_potato', price: 15, cal: 10};
+Hamburger.TOPPING_MAYO = {name: 'topping_mayo', price: 20, cal: 5};
+Hamburger.TOPPING_SPICE = {name: 'topping_spice', price: 15, cal: 0};
 
 /**
 * Добавить добавку к гамбургеру. Можно добавить несколько
