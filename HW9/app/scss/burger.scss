@@ -1,0 +1,95 @@
+
+.burgerHead {
+    border-radius: 20px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burgerH1{
+    width: 80%;
+    color: brown;
+    font-family: cursive;
+    flex-wrap: wrap;
+    align-self: center;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.orderCol {
+    background-color: rgba(18, 35, 19, 0.74);
+    box-shadow: 9px -11px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    align-self: flex-sart;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+.orderH1{
+    align-self: flex-s;
+    text-align: left;
+    margin: 0px;
+}
+
+
+input:disabled{
+    cursor: none;
+}
+
+input, label{
+    cursor: pointer;
+}
+
+#burgerShow {
+    width: 67vw;
+    height: 27vw;
+    background-color: rgba(18, 35, 19, 0.74);
+    box-shadow: 9px -11px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 150px;
+    padding: 15px;
+    margin-top: 30px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+#large{
+    width: 40%;
+    align-self: center;
+}
+#small{
+    width: 25%;
+    align-self: center;
+}
+#potato, #cheese, #salad{
+    display:none;
+}
+#mayo, #spice{
+    display:none;
+    bottom: 15px;
+    width: 15%;
+}
+
+#usrfrom{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#usrfrom .usrfrom__radiobox{
+    margin-right: 30px;
+}
+#usrfrom label input{
+    margin: 10px;
+}

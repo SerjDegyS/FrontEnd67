@@ -13,7 +13,7 @@
 //     this._throws = "Отмена!";
 //  } 
 
- class Hamburger {
+export class Hamburger {
      constructor(size, stuffing) {
         console.log(arguments);
         
@@ -162,29 +162,29 @@ class HamburgerException {
 }
 
 
-// маленький гамбургер с начинкой из сыра
-let hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
-let hamburger2 = new Hamburger(Hamburger.SIZE_LARGE, Hamburger.STUFFING_SALAD);
-// добавка из майонеза
-hamburger.addTopping(Hamburger.TOPPING_MAYO);
+// // маленький гамбургер с начинкой из сыра
+// let hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
+// let hamburger2 = new Hamburger(Hamburger.SIZE_LARGE, Hamburger.STUFFING_SALAD);
+// // добавка из майонеза
+// hamburger.addTopping(Hamburger.TOPPING_MAYO);
 
-// спросим сколько там калорий
-console.log("Calories: %f", hamburger.calculateCalories());
-// сколько стоит
-console.log("Price: %f", hamburger.calculatePrice());
-// я тут передумал и решил добавить еще приправу
-hamburger.addTopping(Hamburger.TOPPING_SPICE);
-// А сколько теперь стоит? 
-console.log("Price with sauce: %f", hamburger.calculatePrice());
-// Проверить, большой ли гамбургер? 
-console.log("Is hamburger large: %s", hamburger.size === Hamburger.SIZE_LARGE); // -> false
-// Узнать начинку
-console.log("Stuffing of hamburger: %s",hamburger.stuffing.name);
-// Убрать добавку
-// hamburger.removeTopping(Hamburger.TOPPING_SPICE);
-// hamburger.removeTopping(Hamburger.TOPPING_SPICE);
-console.log(hamburger.toppings);
-//Количество добавок
-console.log("Have %d toppings", hamburger.toppings.length); // 1
-//Количество созданых гамбургеров
-console.log(`Hamburger count: ${Hamburger.count}`);
+// // спросим сколько там калорий
+// console.log("Calories: %f", hamburger.calculateCalories());
+// // сколько стоит
+// console.log("Price: %f", hamburger.calculatePrice());
+// // я тут передумал и решил добавить еще приправу
+// hamburger.addTopping(Hamburger.TOPPING_SPICE);
+// // А сколько теперь стоит? 
+// console.log("Price with sauce: %f", hamburger.calculatePrice());
+// // Проверить, большой ли гамбургер? 
+// console.log("Is hamburger large: %s", hamburger.size === Hamburger.SIZE_LARGE); // -> false
+// // Узнать начинку
+// console.log("Stuffing of hamburger: %s",hamburger.stuffing.name);
+// // Убрать добавку
+// // hamburger.removeTopping(Hamburger.TOPPING_SPICE);
+// // hamburger.removeTopping(Hamburger.TOPPING_SPICE);
+// console.log(hamburger.toppings);
+// //Количество добавок
+// console.log("Have %d toppings", hamburger.toppings.length); // 1
+// //Количество созданых гамбургеров
+// console.log(`Hamburger count: ${Hamburger.count}`);

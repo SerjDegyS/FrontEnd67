@@ -8,11 +8,11 @@ $(document).ready(function(){
       var findAccordion = $(this).closest('.accordion');
      
       if(findArticle.is(':visible')){
-         findArticle.slideUp();
+         findArticle.slideUp(250);
         
       }else{
-           findAccordion.find('>article').slideUp();
-           findArticle.slideDown();
+           findAccordion.find('>article').slideUp(250);
+           findArticle.slideDown(250);
          }
     });
     

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Burger Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/burger.css">
+</head>
+<body>
+    <div class="burgerHead">
+
+        <h1 class="burgerH1">BURGER SHOP</h1>
+        <div id="burgerShow">
+            <img class="burgerShow__item" id="mayo" src="./img/mayo.png" alt="">
+            <img class="burgerShow__item" id="large" src="./img/burgerBase.png" alt="">
+            <img class="burgerShow__item" id="small" src="./img/burgerBase.png" alt="">
+            <img class="burgerShow__item" id="potato" src="./img/potato.png" alt="">
+            <img class="burgerShow__item" id="cheese" src="./img/cheese.png" alt="">
+            <img class="burgerShow__item" id="salad" src="./img/salad.png" alt="">
+            <img class="burgerShow__item" id="spice" src="./img/spice.png" alt="">
+        </div>
+
+        <p id="outputText"></p>
+
+        <div class="orderCol">
+            <h1 class="orderH1">Choose Your Burger...</h1>
+
+            <form action="" id="usrfrom">
+
+                <div class="usrfrom__radiobox">
+                    <h3>Size:</h3>  
+                    <label >
+                        <input type="radio" name="size" id='size' class="radioInput" onchange="" value="large">Large
+                    </label>
+                    </br>
+                    <label for="">
+                        <input type="radio" name="size" class="radioInput" value="small">Small<br>
+                    </label>
+                </div>
+
+                <div class="usrfrom__radiobox">
+                    <h3>Stuffing:</h3>
+                    <label for="">
+                        <input type="radio" name="stuffing" class="radioInput" value="cheese">with Cheese
+                    </label>
+                    </br>
+                    <label for="">
+                        <input type="radio" name="stuffing" class="radioInput" value="salad">with Salad
+                    </label>      
+                    </br>          
+                    <label for="">
+                        <input type="radio" name="stuffing" class="radioInput" value="potato">with Satato
+                    </label>
+                </div>
+
+                <div class="usrfrom__radiobox">
+                    <h3>Topping:</h3>
+                    <label for="">
+                        <input type="checkbox" class="radioInput" value="mayo">Mayo
+                    </label>
+                    </br>
+                    <label for="">
+                        <input type="checkbox" class="radioInput" value="spice">Spice
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
+
+    <!-- <script src="js/controler.Hamburger.js"></script>
+    <script src="js/model.Hamburger.js"></script>
+    <script src="js/view.Hamburger.js"></script>
+    <script src="js/app.js"></script> -->
+
+</body>
+</html>
