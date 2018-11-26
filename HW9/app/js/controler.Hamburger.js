@@ -1,17 +1,37 @@
-import { Hamburger } from "./model.Hamburger";
+import { ModelHamburger } from "./model.Hamburger";
+import { Hamburger } from "./Hamburger";
+import { ViewHamburger } from "./view.Hamburger";
+
+
 
 export class ControllerHamburger{
     constructor(model, view){
-        this.model = new model(Hamburger.SIZE_LARGE, Hamburger.STUFFING_CHEESE);
+        this.model = new model();
         this.view = new view();
-        this._hamburger;
+        this.defaultStuffing = "cheese";
+
+        console.log('start controller');
+
     }
 
     init() {
-        var check = $('#size');
-        console.log(check);
+        this.view.listener("greateBurger", (size, stuffing) => {
+            console.log(size + '  ' + stuffing);
+            
+            if(!stuffing){
+                stuffing = this.defaultStuffing;                
+            }
+            this.model.greatHamburger(size, stuffing);
+            this.view.writeResult(this.model.getHamburger());
+
+        })
         
-        this.view.writeResult(this.model);
+        this.view.listener("chooseTopping", (toppings) => {
+            this.model.chooseToppings(toppings);
+            this.view.writeResult(this.model.getHamburger());
+        })
+        
+        console.log(this.model.getHamburger());
+        
     }
-    
 }

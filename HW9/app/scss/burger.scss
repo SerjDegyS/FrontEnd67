@@ -4,6 +4,7 @@
     padding: 28px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -13,25 +14,11 @@
     font-family: cursive;
     flex-wrap: wrap;
     align-self: center;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 900;
     line-height: 1.2;
     text-align: center;
     margin-top: 50px;
-}
-
-
-.orderCol {
-    background-color: rgba(18, 35, 19, 0.74);
-    box-shadow: 9px -11px 20px rgba(0, 0, 0, 0.3);
-    padding: 15px;
-    border-radius: 15px;
-    align-self: flex-sart;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 15px;
-    font-family: sans-serif;
 }
 
 .orderH1{
@@ -50,18 +37,42 @@ input, label{
 }
 
 #burgerShow {
-    width: 67vw;
-    height: 27vw;
+    width: 80%;
+    height: 250px;
     background-color: rgba(18, 35, 19, 0.74);
     box-shadow: 9px -11px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 150px;
+    border-radius: 150px 150px 10px 10px;
     padding: 15px;
     margin-top: 30px;
     display: flex;
-    align-self: center;
+    // align-self: center;
     justify-content: center;
 }
 
+#outputText{
+    width: 80%;
+    height: 40px;
+    background-color: rgba(18, 35, 19, 0.74);
+    box-shadow: 9px -11px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 80px;
+    padding: 15px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.orderCol {
+    width: 80%;
+    background-color: rgba(18, 35, 19, 0.74);
+    box-shadow: 9px -11px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    align-self: flex-sart;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
 
 #large{
     width: 40%;
