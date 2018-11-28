@@ -12,13 +12,13 @@
 
         <h1 class="burgerH1">BURGER SHOP</h1>
         <div id="burgerShow">
-            <img class="burgerShow__item" id="mayo" src="./img/mayo.png" alt="">
+            <img class="burgerShow__item topping" id="mayo" src="./img/mayo.png" alt="">
             <img class="burgerShow__item" id="large" src="./img/burgerBase.png" alt="">
             <img class="burgerShow__item" id="small" src="./img/burgerBase.png" alt="">
             <img class="burgerShow__item" id="potato" src="./img/potato.png" alt="">
             <img class="burgerShow__item" id="cheese" src="./img/cheese.png" alt="">
             <img class="burgerShow__item" id="salad" src="./img/salad.png" alt="">
-            <img class="burgerShow__item" id="spice" src="./img/spice.png" alt="">
+            <img class="burgerShow__item topping" id="spice" src="./img/spice.png" alt="">
         </div>
 
         <p id="outputText"></p>
@@ -54,14 +54,14 @@
                     </label>
                 </div>
 
-                <div class="usrfrom__checkbox-topping">
+                <div class="usrfrom__checkbox-topping" id="topping">
                     <h3>Topping:</h3>
                     <label for="">
-                        <input type="checkbox" class="radioInput" value="mayo">Mayonnaise
+                        <input type="checkbox" class="radioInput" value="mayo" disabled>Mayonnaise
                     </label>
                     </br>
                     <label for="">
-                        <input type="checkbox" class="radioInput" value="spice">Spice
+                        <input type="checkbox" class="radioInput" value="spice" disabled>Spice
                     </label>
                 </div>
             </form>

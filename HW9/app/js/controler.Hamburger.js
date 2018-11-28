@@ -30,8 +30,9 @@ export class ControllerHamburger{
             this.model.chooseToppings(toppings);
             this.view.writeResult(this.model.getHamburger());
         })
+
         
-        console.log(this.model.getHamburger());
+        // console.log(this.model.getHamburger());
         
     }
 }

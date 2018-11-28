@@ -77,6 +77,7 @@ input, label{
 #large{
     width: 40%;
     align-self: center;
+    
 }
 #small{
     width: 25%;
@@ -84,9 +85,12 @@ input, label{
 }
 #potato, #cheese, #salad{
     display:none;
+    align-self: center;
+
 }
 #mayo, #spice{
     display:none;
+    align-self: center;
     bottom: 15px;
     width: 15%;
 }
@@ -98,8 +102,13 @@ input, label{
     justify-content: space-around;
     
 }
-#usrfrom .usrfrom__radiobox{
-    margin-right: 30px;
+
+.disabled{
+    pointer-events: none;
+
+    /* for "disabled" effect */
+    opacity: 0.5;
+    background: #CCC;
 }
 #usrfrom label input{
     margin: 10px;

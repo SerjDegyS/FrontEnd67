@@ -1,4 +1,4 @@
-import { Hamburger } from "./Hamburger";
+import { Hamburger, HamburgerEcxeption } from "./Hamburger";
 
 
 export class ModelHamburger{
@@ -6,6 +6,7 @@ export class ModelHamburger{
         this._hamburger;
         this._size;
         this._stuffing;
+        this._toppings;
 
         console.log('start model');
 
@@ -34,19 +35,23 @@ export class ModelHamburger{
         }
         
         this._hamburger = new Hamburger(this._size, this._stuffing);
+        this.chooseToppings(this._toppings);
     }
 
     chooseToppings(toppings){
+        this._toppings = toppings;
         try {
-            if(toppings.includes("mayo")){
+            if(this._toppings.includes("mayo")){
                 this._hamburger.addTopping(Hamburger.TOPPING_MAYO);
             }else this._hamburger.removeTopping(Hamburger.TOPPING_MAYO);
         } catch (error) {
-            
+            if (error.name === 'HamburgerException') {
+                console.log("OK");
+            }
         }
          
         try {
-            if(toppings.includes("spice")){
+            if(this._toppings.includes("spice")){
                 this._hamburger.addTopping(Hamburger.TOPPING_SPICE);
             }else this._hamburger.removeTopping(Hamburger.TOPPING_SPICE);
         }catch (err) {
@@ -55,6 +60,8 @@ export class ModelHamburger{
     }
 
     getHamburger(){
+        console.log(this._hamburger);
+        
         return this._hamburger;
     }
 }

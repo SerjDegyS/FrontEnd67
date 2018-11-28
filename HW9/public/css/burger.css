@@ -101,10 +101,14 @@ input, label {
       align-self: center; }
 
 #potato, #cheese, #salad {
-  display: none; }
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 #mayo, #spice {
   display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
   bottom: 15px;
   width: 15%; }
 
@@ -120,8 +124,11 @@ input, label {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-#usrfrom .usrfrom__radiobox {
-  margin-right: 30px; }
+.disabled {
+  pointer-events: none;
+  /* for "disabled" effect */
+  opacity: 0.5;
+  background: #CCC; }
 
 #usrfrom label input {
   margin: 10px; }

@@ -141,7 +141,7 @@ static checkStuffing (stuffing){
 Hamburger.count = 0;
 /* Размеры, виды начинок и добавок */
 Hamburger.SIZE_SMALL = {name: 'sizeSmall', price: 50, cal: 20};
-Hamburger.SIZE_LARGE = {mame: 'sizeLarge', price: 100, cal: 40};
+Hamburger.SIZE_LARGE = {name: 'sizeLarge', price: 100, cal: 40};
 Hamburger.STUFFING_CHEESE = {name: 'stuffing_cheese', price: 10, cal: 20};
 Hamburger.STUFFING_SALAD = {name: 'stuffing_salad', price: 20, cal: 5};
 Hamburger.STUFFING_POTATO = {name: 'stuffing_potato', price: 15, cal: 10};
@@ -154,13 +154,12 @@ Hamburger.TOPPING_SPICE = {name: 'topping_spice', price: 15, cal: 0};
  * Подробности хранятся в свойстве message.
  * @constructor
  */
-class HamburgerException {
+class HamburgerException{
     constructor(message) {
         this.name = 'HamburgerException';
         this.message = message;
     }
 }
-
 
 // // маленький гамбургер с начинкой из сыра
 // let hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
